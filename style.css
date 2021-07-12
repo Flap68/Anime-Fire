@@ -1,0 +1,914 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: arial;
+}
+
+.container {
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.459) 20%,
+        rgba(20, 20, 20, 0.548) 80%, 
+        rgba(20, 20, 20, 1) 100%
+    ),
+    url(https://th.bing.com/th/id/R.3dd948fecf89b3e06d0e0dbb67051a80?rik=wbwKMoEmKoTLjA&pid=ImgRaw);
+    background-size: cover;
+    background-position: center;
+    color: #e5e5e5;
+
+    width: 100%;
+}
+
+.header{
+    background-color: rgb(0, 0, 0, 0.9);
+
+    margin: 0 auto;
+    width: 100%;
+
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.logomarca {
+    text-decoration: none;
+
+    color: #08aec4;
+
+    animation-name: coloridos;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+
+    color: #08aec4;
+
+    animation-name: coloridos;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coloridos{
+    0% {
+        color: #08225c;
+    }
+
+    30% {
+        color: #540579;
+    }
+    
+    50% {
+        color: #E1306C;
+    }
+
+    80% {
+        color: #32e6b0;
+    }
+
+    100% {
+        color: #00acee;
+    }
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, .75);
+
+    cursor: pointer;
+}
+
+.menu-left li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .75);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.menu li {
+    margin-right: 0.8rem;
+}
+
+.menu li:hover {
+    color: #08aec4;
+}
+
+.menu li a:hover {
+    color: #08aec4;
+}
+
+ul  input {
+    margin-right: 0.8rem;
+    border-radius: 0px;
+    border-style: outset;
+    border: none;
+
+    border-bottom: 1px solid #e5e5e5;
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+
+    outline: 0;
+}
+
+
+.movie {
+    margin-top: 2rem;
+
+}
+
+.lançamento {
+
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lançamento h3 {
+    padding: 0 1rem;
+    border-bottom: 3px solid #08aec4;
+
+    font-size: 19px;
+}
+
+/*======================================================================================
+===========================================================*/
+
+.animdestaque {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.taque {
+    width: 14%;
+    height: 150px;
+    margin: auto;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.taque:hover {
+    box-shadow: 0px 0px 8px #08aec4;
+
+}
+
+.name2 {
+    font-size: 1px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 0;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.name2:hover {
+    transition-delay: 0.1s;
+    opacity: 1;
+
+}
+
+.destaque {
+    position: absolute;
+    font-size: 10px;
+
+    top: 2px;
+    left: 1px;
+
+    padding: 1px 10px;
+
+    background-color: #08aec4;
+    color: white;
+
+    z-index: 4;
+}
+
+.animdestaque .taque img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-left: 1px solid rgb(0, 0, 0, 0.8);
+    border-right: 1px solid rgb(0, 0, 0, 0.8);
+    border-top: 2px solid rgb(0, 0, 0, 0.8);
+
+}
+
+
+
+.name {
+
+    text-align: center;
+
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    font-size: 13.4px;
+    font-weight: 200;
+    font-style: italic;
+
+    padding: 0.2rem 0rem;
+
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*=========================================================================================
+===========================================================*/
+
+.episodios {
+    margin: 0 auto;
+
+    margin-top: 2rem;
+
+    width: 1250px;
+    /* 1250px; */
+}
+
+
+.epsanime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 1rem;
+}
+/*=========================================================*/
+.descri {
+    /*23%*/
+    width: 23%;
+    height: 150px;
+    margin: auto;
+    position: relative;
+
+    
+    margin-left: 0.1rem;
+
+    margin-bottom: 0.3rem;
+
+    cursor: pointer;
+
+    /*A caixa de todos, a foto e a descrição, dentro da descri, tem a img e a descrição da img*/
+}
+
+.descri img {
+    height: 150px;
+    width: 100%;
+
+    
+    object-fit: cover;
+    /*da um zoom na imagem*/
+    border-left: 3px solid rgb(0, 0, 0, 0.8);
+    border-right: 3px solid rgb(0, 0, 0, 0.8);
+    border-top: 2px solid rgb(0, 0, 0, 0.8);
+
+    /*A img, tem que coloca 100%, para que ele fique certinho com o width da class, descri*/
+}
+
+.log {
+
+    position: absolute;
+    top: 0.3rem;
+    left: 0.2rem;
+}
+
+.log img {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+}
+
+.nome2 {
+    font-size: 1px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 0;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.nome2:hover{
+    transition-delay: 0.1s;
+    opacity: 1;
+}
+
+.nome {
+    z-index: 1;
+
+    text-align: center;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    font-size: 13.6px;
+    font-weight: 700;
+    font-style: italic;
+
+    padding: 0.3rem 0rem;
+
+    background-color: rgb(0, 0, 0, 0.8);
+
+    /*A descrição, note que ela esta em "position: absolute;, a descrição tem que esta em "position: absolute; e a img tem que ta
+    "position: relative; pra que a descrição fique colada na img*/
+}
+
+
+/*===========================================================*/
+
+.ep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ep h3 {
+    padding: 0 1rem;
+    border-bottom: 3px solid #08aec4;
+
+    font-size: 19px;
+}
+
+.footer {
+    margin-top: 3rem;
+
+    background-color: rgba(10, 10, 10, 0.849);
+}
+
+.footer h3 {
+    font-weight: 200;
+
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.parceria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+     position: relative;
+
+    z-index: 1;
+}
+
+.naruto img{
+    width: 150px;
+    height: 180px;
+
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+
+    z-index: 0;
+}
+
+.parceria ul li {
+    font-weight: 158;
+    font-size: 13px;
+}
+
+.footer {
+    position: relative;
+}
+
+footer {
+    width: 700px;
+    margin: 0 auto;
+
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+/* PARTE DE BAIXO, D0S 100PX */
+
+@media (max-width: 1300px) {
+    .header {
+        padding: 1rem 1rem;
+        
+    }
+
+    .movie {
+        margin: 0 auto;
+        overflow-x: auto;
+
+        padding: 0 0.1rem;
+
+
+    }
+
+    .animdestaques {
+        width: 900px;
+    }
+
+    .taque {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .episodios{
+        width: 800px;
+    }
+
+    .epsanime {
+        width: 100%;
+
+    } 
+}
+
+@media (max-width: 1000px) {
+    .episodios{
+        width: 800px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .descri {
+        width: 60%;
+
+        margin: 0 auto;
+
+        margin-bottom: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    } 
+
+}
+
+@media (max-width: 900px) {
+    .logo {
+        font-size: 20px;
+    }
+    .header {
+        display: block;
+        padding: 1rem 0.2rem;
+    }
+
+    .menu {
+        width: 600px;
+        padding: 0;
+
+        margin: 0 auto;
+        
+    }
+
+    .menu li {
+        margin-right: 0.4rem;
+    }
+
+    .menu-left ul {
+        padding-left: 0; 
+    }
+
+    .menu-right ul {
+        padding-left: 0; 
+    }
+
+    .menu-left,
+    .menu-right {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        color: rgba(255, 255, 255, .75);
+
+        cursor: pointer;
+    }
+
+    
+
+    .menu-right ul li i{
+        padding: 0;
+        margin: 0;
+        font-size: 0px;
+    }
+
+
+    ul  input {
+        margin-right: 0.2rem;
+        border-radius: 0px;
+        border-style: outset;
+        border: none;
+
+        border-bottom: 1px solid #e5e5e5;
+        background-color: rgb(0, 0, 0, 0.9);
+        color: white;
+
+        outline: 0;
+    }
+
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .episodios {
+        width: 500px;
+    }
+    
+    .descri {
+        width: 98%;
+    }
+
+    footer {
+        width: 500px;
+        margin: 0 auto;
+
+        margin-top: 1.8rem;
+        padding-bottom: 0.3rem;
+
+        font-size: 10px;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .menu {
+        width: 550px;
+    }
+}
+
+
+@media (max-width: 571px) {
+    .logo {
+        font-size: 20px;
+    }
+
+   .menu {
+        width: 450px;
+        margin: 0 auto;
+
+        align-items: center;
+        
+   }
+
+   .episodios{
+        width: 400px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 70% 70%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .descri {
+        width: 60%;
+
+        margin: 0 auto;
+
+        margin-bottom: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    } 
+
+   footer {
+        width: 400px;
+        margin: 0 auto;
+
+        margin-top: 1.8rem;
+        padding-bottom: 0.3rem;
+
+        font-size: 10px;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 452px) {
+    .logo {
+        font-size: 20px;
+    }
+    .menu {
+        width: 430px;
+        margin: 0 auto;
+
+        align-items: center;
+        
+   }
+
+
+    .episodios{
+        width: 350px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 75% 75%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+}
+
+@media (max-width: 429px) {
+    .logo {
+        font-size: 20px;
+    }
+    .menu {
+        width: 384px;
+        margin: 0 auto;
+
+        align-items: center;
+        
+   }
+
+
+    .episodios{
+        width: 300px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 85% 85%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+}
+
+@media (max-width: 407px) {
+    .logo {
+        font-size: 20px;
+    }
+    .menu {
+        width: 384px;
+
+        margin: 0 auto;
+        display: block;
+
+        align-items: center;
+
+        position: relative;   
+
+        padding-bottom: 2rem;  
+   }
+
+   .menu-left {
+        font-size: 16px;
+   }
+
+   .menu-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+   }
+
+
+   .menu-right input {
+        padding-right: 5rem;
+   }
+
+
+    .episodios{
+        width: 300px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 80% 80%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    footer {
+        width: 350px;
+        margin: 0 auto;
+
+        margin-top: 1.8rem;
+        padding-bottom: 0.3rem;
+
+        font-size: 10px;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width: 488px) {
+    .menu {
+        width: 320px;
+
+        margin: 0 auto;
+        display: block;
+
+        align-items: center;
+
+        position: relative;   
+
+        padding-bottom: 2rem;  
+   }
+
+   .episodios{
+        width: 288px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 80% 80%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .ep h3 {
+        font-size: 17px;
+    }
+    .episodios{
+        width: 200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 100% 100%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+}
+
+@media (max-width: 349px) {
+    footer {
+        width: 300px;
+        margin: 0 auto;
+
+        margin-top: 1.8rem;
+        padding-bottom: 0.3rem;
+
+        font-size: 10px;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 323px) {
+    .episodios{
+        width: 188px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .epsanime {
+
+        display: grid;
+        grid-template-columns: 100% 100%;
+
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+
+}
