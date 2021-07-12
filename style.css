@@ -687,6 +687,7 @@ footer {
 }
 
 @media (max-width: 489px) {
+
     .logo {
         font-size: 20px;
     }
@@ -711,6 +712,10 @@ footer {
         position: absolute;
         bottom: 0;
         right: 0;
+   }
+
+   .menu li {
+        margin-right: 0.8rem;
    }
 
 
