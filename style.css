@@ -686,17 +686,41 @@ footer {
 
 }
 
-@media (max-width: 452px) {
+@media (max-width: 489px) {
     .logo {
         font-size: 20px;
     }
     .menu {
-        width: 430px;
+        width: 384px;
+
         margin: 0 auto;
+        display: block;
 
         align-items: center;
-        
+
+        position: relative;   
+
+        padding-bottom: 2rem;  
    }
+
+   .menu-left {
+        font-size: 16px;
+   }
+
+   .menu-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+   }
+
+
+   .menu-right input {
+        padding-right: 5rem;
+   }
+}
+
+@media (max-width: 452px) {
+    
 
 
     .episodios{
