@@ -84,7 +84,7 @@ a {
 .animes {
 	width: 100%;
 
-	max-width: 900px;
+	max-width: 1258px;
 	margin: 0 auto; 
 }
 
@@ -98,7 +98,8 @@ a {
 }
 
 
-@media (min-width: 1200px) {
+
+@media (max-width: 1200px) {
 	.conteudo {
     	max-width: 97%;
     }
@@ -112,7 +113,7 @@ a {
 	}
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 	.conteudo {
     	max-width: 97%;
     }
@@ -126,7 +127,7 @@ a {
 	}
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	.conteudo {
     	max-width: 97%;
     }
@@ -141,7 +142,7 @@ a {
 }	
 
 
-@media (min-width: 576px){
+@media (max-width: 576px){
 	.conteudo {
 		max-width: 97%;
 }
@@ -155,7 +156,7 @@ a {
 }
 
 
-@media (min-width: 574px){
+@media (max-width: 574px){
 	.conteudo {
 		max-width: 97%;
 }
@@ -168,7 +169,7 @@ a {
 	
 }
 
-@media (min-width: 500px){
+@media (max-width: 500px){
 	.conteudo {
 		max-width: 97%;
 }
@@ -182,7 +183,7 @@ a {
 }
 
 
-@media (min-width: 399px){
+@media (max-width: 399px){
 	.conteudo {
 		max-width: 97%;
 }
@@ -197,7 +198,7 @@ a {
 }
 
 
-@media (min-width: 360px){
+@media (max-width: 360px){
 	.conteudo {
 		max-width: 97%;
 }
@@ -210,7 +211,7 @@ a {
 	
 }
 
-@media (min-width: 320px){
+@media (max-width: 320px){
 	.conteudo {
 		max-width: 97%;
 }
