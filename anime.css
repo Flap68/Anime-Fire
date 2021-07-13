@@ -1,0 +1,224 @@
+.todos{
+	
+	width: 100%;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 5rem;
+}
+
+.todos h3 {
+	padding: 0 1rem;
+    border-bottom: 3px solid #08aec4;
+
+    font-size: 19px;
+}
+
+.conteudo {
+    width: 100%;
+    
+    padding: 0 15px;
+    
+    margin: 0 auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.pb-3 {
+    padding-bottom: 1rem!important;
+}
+
+
+.rowDivLetraDaLista {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+
+a {
+    background-color: transparent;
+}
+
+a {
+    color: #fff;
+    -webkit-text-decoration-skip: objects;
+
+    text-decoration: none;
+}
+
+
+
+.divLetraDaLista {
+    padding-top: 6px;
+    width: 49px;
+    height: 34px;
+
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 4px;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: .1rem;
+
+    text-align: center;
+}
+
+.divLetraDaLista:hover {
+	background-color: rgb(0, 0, 0, 0.9);
+}
+
+.animes {
+	width: 100%;
+
+	max-width: 900px;
+	margin: 0 auto; 
+}
+
+
+.poster {
+	display: flex;
+	flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (min-width: 1200px) {
+	.conteudo {
+    	max-width: 97%;
+    }
+
+    .animes {
+		width: 100%;
+
+		max-width: 900%;
+	
+
+	}
+}
+
+@media (min-width: 992px) {
+	.conteudo {
+    	max-width: 97%;
+    }
+
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+
+	}
+}
+
+@media (min-width: 768px) {
+	.conteudo {
+    	max-width: 97%;
+    }
+
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+
+	}
+}	
+
+
+@media (min-width: 576px){
+	.conteudo {
+		max-width: 97%;
+}
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+	}
+	
+}
+
+
+@media (min-width: 574px){
+	.conteudo {
+		max-width: 97%;
+}
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+	}
+	
+}
+
+@media (min-width: 500px){
+	.conteudo {
+		max-width: 97%;
+}
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+	}
+	
+}
+
+
+@media (min-width: 399px){
+	.conteudo {
+		max-width: 97%;
+}
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+	}
+
+	
+}
+
+
+@media (min-width: 360px){
+	.conteudo {
+		max-width: 97%;
+}
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+	}
+	
+}
+
+@media (min-width: 320px){
+	.conteudo {
+		max-width: 97%;
+}
+    .animes {
+		width: 100%;
+
+		max-width: 900px;
+	
+	}
+}

@@ -22,6 +22,8 @@ body {
     background-position: center;
     color: #e5e5e5;
 
+
+
     width: 100%;
 }
 
@@ -280,7 +282,8 @@ ul  input {
 
     margin-top: 2rem;
 
-    width: 1250px;
+    width: 100%;
+    max-width: 1250px;
     /* 1250px; */
 }
 
@@ -290,18 +293,18 @@ ul  input {
     align-items: center;
     justify-content: center;
 
-    padding: 0 1rem;
 }
 /*=========================================================*/
 .descri {
     /*23%*/
     width: 23%;
     height: 150px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
 
-    
-    margin-left: 0.1rem;
+    margin-left: 0;
+    margin-right: 0;
+   
 
     margin-bottom: 0.3rem;
 
@@ -482,47 +485,21 @@ footer {
 }
 
 @media (max-width: 1250px) {
-    .episodios{
-        width: 800px;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
-    .epsanime {
-        width: 100%;
-
-    } 
 }
 
 @media (max-width: 1000px) {
-    .episodios{
-        width: 800px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
-    .epsanime {
-
-        display: grid;
-        grid-template-columns: 50% 50%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
-
-    .descri {
-        width: 60%;
-
-        margin: 0 auto;
-
-        margin-bottom: 0.5rem;
-        align-items: center;
-        justify-content: center;
-    } 
 
 }
 
@@ -595,11 +572,9 @@ footer {
 
 
     .episodios {
-        width: 500px;
-    }
-    
-    .descri {
-        width: 98%;
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
     footer {
@@ -638,35 +613,10 @@ footer {
         
    }
 
-   .episodios{
-        width: 400px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
-
-    .epsanime {
-
-        display: grid;
-        grid-template-columns: 70% 70%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
-
-    .descri {
-        width: 60%;
-
-        margin: 0 auto;
-
-        margin-bottom: 0.5rem;
-        align-items: center;
-        justify-content: center;
+   .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     } 
 
    footer {
@@ -718,31 +668,39 @@ footer {
    .menu-right input {
         padding-right: 5rem;
    }
+
+   .naruto img{
+        width: 0px;
+        height: 0px;
+    }
+
+    .episodios {
+        width: 100%;
+        max-width: 800px;
+    /* 1250px; */
+    }
+
 }
 
 @media (max-width: 452px) {
-    
-
-
-    .episodios{
-        width: 350px;
-        margin: 0 auto;
-        align-items: center;
+    .epsanime {
+        flex-wrap: nowrap;
+        align-content: center;
         justify-content: center;
-
-        padding: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .epsanime {
+    .descri {
+        /*23%*/
+        width: 100%;
+}
+    
 
-        display: grid;
-        grid-template-columns: 75% 75%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 }
 
@@ -758,26 +716,24 @@ footer {
         
    }
 
-
-    .episodios{
-        width: 300px;
-        margin: 0 auto;
-        align-items: center;
+   .epsanime {
+        flex-wrap: nowrap;
+        align-content: center;
         justify-content: center;
-
-        padding: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .epsanime {
+    .descri {
+        /*23%*/
+        width: 100%;
+    }
 
-        display: grid;
-        grid-template-columns: 85% 85%;
 
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 }
 
@@ -814,25 +770,10 @@ footer {
    }
 
 
-    .episodios{
-        width: 300px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
-
-    .epsanime {
-
-        display: grid;
-        grid-template-columns: 80% 80%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
     footer {
@@ -867,52 +808,26 @@ footer {
         padding-bottom: 2rem;  
    }
 
-   .episodios{
-        width: 288px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
+   .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
-    .epsanime {
-
-        display: grid;
-        grid-template-columns: 80% 80%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
 }
 
 @media (max-width: 370px) {
     .ep h3 {
         font-size: 17px;
     }
-    .episodios{
-        width: 200px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
 
-        padding: 0;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
-    .epsanime {
 
-        display: grid;
-        grid-template-columns: 100% 100%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
 }
 
 @media (max-width: 349px) {
@@ -933,25 +848,10 @@ footer {
 }
 
 @media (max-width: 323px) {
-    .episodios{
-        width: 188px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
-    }
-
-    .epsanime {
-
-        display: grid;
-        grid-template-columns: 100% 100%;
-
-
-        align-items: center;
-        justify-content: center;
-
-        padding: 0;
+    .episodios {
+        width: 100%;
+        max-width: 1250px;
+    /* 1250px; */
     }
 
 }
