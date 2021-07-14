@@ -685,11 +685,12 @@ nav {
 
     .menu-section.on nav {
         display: block;
+        height: 80vh;
     }
 
     .menu-section.on .menu-toggle {
         position: absolute;
-        right: 25px;
+        right: 17px;
         top: 15px;
     }
 
@@ -706,14 +707,31 @@ nav {
     }
 
     .menu-section.on nav ul {
+        
+        height: 97%;
         text-align: center;
-        display: block;
+        display: flex;
+        padding: 0;
+        padding-left: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+
     }
 
     .menu-section.on nav ul li {
+        width: 100%;
         display: flex;
         text-align: center;
-        justify-content: center;
+        justify-content: flex-start;
+        align-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap
+
 
     }
 
@@ -727,6 +745,10 @@ nav {
         text-decoration: none;
 
         color: grey;
+
+        border-left:  5px solid #08aec4;
+
+        padding-left: 1rem;
     }
 
     .menu-section.on nav ul a:hover {
