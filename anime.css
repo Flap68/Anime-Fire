@@ -94,7 +94,6 @@ a {
 	align-items: center;
 	justify-content: center;
 
-	flex-wrap: wrap;
 }
 
 
@@ -125,6 +124,8 @@ a {
 	
 
 	}
+
+	
 }
 
 @media (max-width: 768px) {
@@ -138,6 +139,14 @@ a {
 		max-width: 900px;
 	
 
+	}
+
+	.poster {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		flex-wrap: wrap;
 	}
 }	
 

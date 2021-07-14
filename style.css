@@ -36,8 +36,34 @@ body {
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     position: relative;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: white;
+
+    text-decoration: none;
 }
 
 .logomarca {
@@ -370,7 +396,7 @@ body {
 }
 
 .naruto img{
-    width: 150px;
+    width: 200px;
     height: 180px;
 
     position: absolute;
@@ -383,7 +409,13 @@ body {
 .parceria ul li {
     font-weight: 158;
     font-size: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
+
 
 .footer {
     position: relative;
@@ -394,7 +426,7 @@ footer {
     margin: 0 auto;
 
     margin-top: 1rem;
-    padding-bottom: 0.3rem;
+    padding-bottom: 1rem;
 
     font-size: 12px;
     align-items: center;
@@ -402,6 +434,23 @@ footer {
 
     text-align: center;
 
+    color: #e4e4e4e4;
+
+}
+
+.linkdiscord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.discord {
+    margin-left: 2px;
+
+    text-decoration: none;
+    color: #7289da;
 }
 
 /* PARTE DE BAIXO, D0S 100PX */
@@ -454,8 +503,38 @@ footer {
         font-size: 20px;
     }
     .header {
-        display: block;
-        padding: 1rem 0.2rem;
+        display: flex;
+        padding: 1rem 1rem;
+    }
+
+    .header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: flex;
+
+        margin-right: 0.5rem;
+        text-decoration: none;
+    }
+
+    nav ul li:hover {
+        color: gray;
+     }
+
+
+    nav ul li a {
+        color: white;
+
+        text-decoration: none;
     }
 
 
@@ -487,9 +566,6 @@ footer {
     }
 }
 
-@media (max-width: 630px) {
-
-}
 
 
 @media (max-width: 571px) {
@@ -581,6 +657,13 @@ nav {
         margin-right: 20px;
        
     }
+
+    .header nav {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     /* fullscreen */
     .menu-section.on {
