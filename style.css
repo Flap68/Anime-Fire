@@ -14,13 +14,13 @@ body {
     background-image: linear-gradient(
         to bottom, 
         rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.459) 20%,
-        rgba(20, 20, 20, 0.548) 80%, 
+        rgba(0, 0, 0, 0.5) 20%,
+        rgba(20, 20, 20, 0.8) 80%, 
         rgba(20, 20, 20, 1) 100%
     ),
     url(https://th.bing.com/th/id/R.3dd948fecf89b3e06d0e0dbb67051a80?rik=wbwKMoEmKoTLjA&pid=ImgRaw);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: #e5e5e5;
 
 
@@ -344,8 +344,24 @@ nav ul li a {
 
 .footer {
     margin-top: 3rem;
+    position: relative;
 
     background-color: rgba(10, 10, 10, 0.849);
+    background-image: url();
+    background-position: left;
+    background-size: cover;
+
+}
+
+.naruto {
+    position: absolute;
+    top: 0;
+    height: 205px;
+}
+
+.naruto img {
+    width: 150px;
+    height: 100%;
 }
 
 .footer h3 {
@@ -370,16 +386,7 @@ nav ul li a {
     z-index: 1;
 }
 
-.naruto img{
-    width: 200px;
-    height: 180px;
 
-    position: absolute;
-    top: 1.5rem;
-    left: 0;
-
-    z-index: 0;
-}
 
 .parceria ul li {
     font-weight: 158;
@@ -394,10 +401,13 @@ nav ul li a {
 
 .footer {
     position: relative;
+
 }
 
 .footer h3 {
     font-size: 19px;
+
+    margin: 1.5rem 0;
 
     font-weight: bold;
 }
@@ -583,11 +593,6 @@ footer {
 }
 
 @media (max-width: 489px) {
-   
-   .naruto img{
-        width: 0px;
-        height: 0px;
-    }
 
     .episodios {
         width: 100%;
@@ -782,6 +787,10 @@ nav {
         font-size: 20px;
     }
     
+    .naruto img {
+        width: 0px;
+        height: 0%;
+    }
 
 
     .episodios {
