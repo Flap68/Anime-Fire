@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -77,40 +78,14 @@ nav ul li a {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-
-
-    color: #08aec4;
-
-    animation-name: coloridos;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes coloridos{
-    0% {
-        color: #08225c;
-    }
-
-    30% {
-        color: #540579;
-    }
-    
-    50% {
-        color: #E1306C;
-    }
-
-    80% {
-        color: #32e6b0;
-    }
-
-    100% {
-        color: #00acee;
-    }
+    width: 200px;
 
 }
 
+.logo img {
+    width: 100%;
+
+}
 
 
 .movie {
@@ -390,7 +365,7 @@ nav ul li a {
 
     
 
-     position: relative;
+    position: relative;
 
     z-index: 1;
 }
@@ -421,6 +396,12 @@ nav ul li a {
     position: relative;
 }
 
+.footer h3 {
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
 footer {
     width: 700px;
     margin: 0 auto;
@@ -435,6 +416,10 @@ footer {
     text-align: center;
 
     color: #e4e4e4e4;
+
+    position: relative;
+
+    z-index: 8;
 
 }
 
@@ -598,11 +583,6 @@ footer {
 }
 
 @media (max-width: 489px) {
-    
-    .logo span {
-        font-size: 30px;
-    }
-
    
    .naruto img{
         width: 0px;
@@ -628,10 +608,11 @@ footer {
 
     .header {
         display: flex;
-        align-items: center;
-
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
 
     }
 
@@ -654,7 +635,6 @@ nav {
     .menu-toggle {
         width: 40px;
         height: 30px;
-        margin-right: 20px;
        
     }
 
@@ -770,12 +750,10 @@ nav {
         max-width: 1250px;
     /* 1250px; */
     }
-}
+
 
 @media (max-width: 429px) {
-    .logo {
-        font-size: 20px;
-    }
+    
     
 
    .epsanime {
