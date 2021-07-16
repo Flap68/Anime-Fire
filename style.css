@@ -9,6 +9,7 @@ body {
     font-family: arial;
 }
 
+
 .container {
     height: 100%;
     background-image: linear-gradient(
@@ -27,6 +28,67 @@ body {
 
     width: 100%;
 }
+
+
+
+/*CARROSSEL ================================*/
+
+.carrossel {
+    overflow: hidden;
+    height: 400px;
+    width: 700px;
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+
+    border-radius: 5px;
+
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.carro {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    transform: translateX(0);
+
+    width: 100%;
+
+    z-index: 1;
+
+    position: relative;
+
+    
+}
+
+.cor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 3200px;
+    height: 500px;
+    background-color: rgb(0, 0, 0, 0.4);
+
+    z-index: 2;
+
+
+}
+
+.carro img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+
+}
+/*CARROSSEL ================================*/
+
+
+
 
 .header{
     background-color: rgb(0, 0, 0, 0.9);
@@ -561,11 +623,30 @@ footer {
     }
 }
 
-
+@media (max-width: 699px) {
+    .carrossel {
+        width: 100%;
+        max-width: 700px;
+        overflow: none;
+    }
+}
 
 @media (max-width: 571px) {
     .logo {
         font-size: 20px;
+    }
+
+    .carrossel {
+        width: 100%;
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+    .carro img {
+        object-fit: fill;
+        height: 500px;
+        width: 660px;
+
     }
 
 
